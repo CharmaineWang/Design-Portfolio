@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Charmaine Wang</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equic="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../src/style/css/style.css">
+        
+        <!--FONTS-->
+        <link rel="stylesheet" href="https://use.typekit.net/sjq0cec.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel='stylesheet' type='text/css'>
+        
+        <!--icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+        <!--favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon_package_v0.16/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="../assets/img/favicon_package_v0.16/site.webmanifest">
+        <link rel="mask-icon" href="../assets/img/favicon_package_v0.16/safari-pinned-tab.svg" color="#fcd912">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+
+    
+        <!-- Responsive Query File-->
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        
+        <!-- Boostrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">                                                          
+        
+    </head>
+    
+    <body class="project_3_page">
+        <div class="project_page">
+            <div class="landing_page site-container">
+                <header>
+                    <nav> 
+                        <p class="nav_bar show_desktop" id="navigation"><a href="index.html" style="color:#FA5F73">Home</a></p>
+                    </nav>
+                </header>
+                <div class="main_section">    
+                    <div class="project_intro">
+                        <h1>Redemption Flow Enhancements</h1>
+                        <h3>company.</h3>
+                        <p>Horizn</p>
+                        <h3>year.</h3>
+                        <p>2018</p>
+                        <h3>skills.</h3>
+                        <p>Product Manger <br>Interaction Design</p>
+                    </div>
+                    <img align="right" src="../assets/img/work/redemption_landing.png" alt="landing image" class="landing_img">
+                </div>
+            </div>
+
+            <div class="project_page_content">
+                <h2>Background</h2>
+                
+                <p>To stay competitive in the market, gamified educational tools are widely popular amongst employees. Companies and corporations are utilizing e-learning tools and re- wards systems to motivate employees to be more educated on their products. Horizn, dedicated to providing employee and customer learning platforms, helps gamify the learning experience through client provided learning assets and prizes that users may redeem for. Motorola, one of Horizn’s clients, utilizes a rewards systems implemented into a digital platform called "Moto Rewards" created by Horizn. The website educates users about old and new products through informative activities such as interactive powerpoints, infographics and videos. Within the program, Users can earn points by completing each learning activity and then redeem the points for eligible rewards. Horizn is responsible for designing a seemless redemption process to ensure users are satisfied throughout the learning experience and return for more educational contents to increase engagement.</p>
+                
+                <h2>Problem Space</h2>
+                
+                <p>The employee platform’s existing “Moto Rewards” standard redemption flow enables users to go to the “Rewards” page and select an eligible product to redeem for; eligible products are products marked at redemption points that are within the user’s total available redemption points. The existing user interface and experience displayed major flaws within the system, which caused confusion amongst users throughout the redemption process.</p>
+                
+                <p>Due to the site’s lack of transparency, many users were not aware of the status of their redemptions which led to many support cases that the customer success team had to resolve. Although users were sent email updates regarding the status of their rewards, it was found that Motorola users did not actively seek their inbox for rewards updates. Furthermore, users were extremely concerned about their shipping details as that forum was well hidden within the site, which was not user-friendly due to its visibility and accessibility deficiencies. Users were also concerned about updating potentially new shipment addresses as they were not reminded to do so after each redemption. Additional to the enhancements, because the platform was providing opportunities for employees to earn prizes, it was mandatory to incorporate a W9 form requirement into the user flow.</p>
+                
+                <h2>Design Problem</h2>
+                
+                <h3>User Flow Design Flaws</h3>
+                
+                <p>The current process contained three main problems, presented an unsatisfying user experience and limited redemption traffic. Once a user arrived at the “Rewards” page, they would see a catalog of products that were available for redemption. Within the catalog, Each product was contained in a product card. The product cards included each product’s product image, product name and the price of the product in points currency. Only products with point values that were less than or equal to the user’s total available rewards points were displayed with color. Products that were out of the user’s points range, were grayed out thus, indicating that it was not available for redemption. Firstly, “Product Details” pages were only available to users when they had enough points to redeem for that product. The “Product Details” page contained full descriptions and available selections of a product which gave users more insight to the reward. This decision was initially made with the belief that users would be more inclined to earn points in order to unveil each product description. As a result of this solution, users were instead, more reluctant to earn points and only redeemed for low point products between the range 110 to 1230 points. This approach failed to encourage users to redeem for higher point products, which led to a redemption rate lower than expected.</p>
+                
+                <p>Additionally, there were multiple pages worth of products and the products were listed in the order from least expensive to the most expensive. This was originally decided to avoid any discomfort in making users feel bad for not being able to redeem for more expensive products. However, since the more expensive products were placed near the end and users could not click into products that were worth above their available rewards points, users were more likely to not go past the page with greyed out products. This led to limited visibility of all the available products and discouraged users from earning more rewards points, which did not deliver Horizn’s goal of employee engagement.</p>
+                
+                <p>Secondly, the only form of confirmation regarding a user’s product status was through email. After each redemption, the user would receive 3 emails: a redemption confirmation email, a product shipped email, and an expiry email. The lack of trans- parency on the website drove numerous support cases as users were concerned about their products. Not only were users hesitant about redeeming future products, but this problem also took time away from the customer success team.</p>
+                
+                <p>Lastly, once a redemption was completed, users were led to a “Thank You” page. On the “Thank You” page, users would be reminded to fill out their shipping details if the information was absent. The user may access the form under the “Shipping Details” tab on their profile page. Since all rewards referenced to this shipping ad- dress, users only needed to enter their information once. Once the form was filled correctly and saved by the user, users were not prompted with the shipping address steps on the “Thank You” page in future redemptions. This approach was meant to make the redemption process shorter so that users would not have to enter their shipping address during every redemption process. Over time, Horizn’s customer suc- cess team realized that user’s redeemed rewards were expiring due to forgetting to fill out the shipment details. Although users were reminded through email to enter their shipping address in order to receive their prize, emails have been shown to not entice users and may be easily forgotten. Additionally, users with a new shipping address were not reminded to update their shipping address nor were they directed to the “Shipping Detatils” tab after filling it out once. This raised a lot of issues for the customer success staff as more expired use cases and complaints about changing shipping addresses were brought up throughout the year.</p>
+                
+                <h3>W9 form requirements</h3>
+                
+                <p>Motorola’s new business need was to ensure all users sign a W9 Form if their “Moto Rewards” products redeemed in total was greater than $600 in a calendar year. Each product has an associated manufacturer’s suggested retail price (MSRP) in USD dollars, and every time a user completed the redemption of a product, the product’s MSRP value was to be added to the user’s year to date total. The W9 form, formally known as the Request for Taxpayer Identification Number and Certification, is an income tax system used in the United States and filed by a third party. The requirement stated that once the user reached $600 in their year to date total, the user must submit the W9 to the government in order to redeem for future rewards through the website. To meet this need, Horizn must update the rewards redemption flow to ensure that user can select a prize or reward and be informed if they’ve met the $600 threshold. A second requirement was to ensure that users that have either met or exceeded the $600 threshold must sign a W9 Form prior to redeeming for any additional products.</p>
+                
+                <p>Additionally, there were multiple pages worth of products and the products were listed in the order from least expensive to the most expensive. This was originally decided to avoid any discomfort in making users feel bad for not being able to redeem for more expensive products. However, since the more expensive products were placed near the end and users could not click into products that were worth above their available rewards points, users were more likely to not go past the page with greyed out products. This led to limited visibility of all the available products and discouraged users from earning more rewards points, which did not deliver Horizn’s goal of employee engagement.</p>
+                
+                <p>Secondly, the only form of confirmation regarding a user’s product status was through email. After each redemption, the user would receive 3 emails: a redemption confirmation email, a product shipped email, and an expiry email. The lack of trans- parency on the website drove numerous support cases as users were concerned about their products. Not only were users hesitant about redeeming future products, but this problem also took time away from the customer success team.</p>
+                
+                <p>Lastly, once a redemption was completed, users were led to a “Thank You” page. On the “Thank You” page, users would be reminded to fill out their shipping details if the information was absent. The user may access the form under the “Shipping Details” tab on their profile page. Since all rewards referenced to this shipping ad- dress, users only needed to enter their information once. Once the form was filled correctly and saved by the user, users were not prompted with the shipping address steps on the “Thank You” page in future redemptions. This approach was meant to make the redemption process shorter so that users would not have to enter their shipping address during every redemption process. Over time, Horizn’s customer suc- cess team realized that user’s redeemed rewards were expiring due to forgetting to fill out the shipment details. Although users were reminded through email to enter their shipping address in order to receive their prize, emails have been shown to not entice users and may be easily forgotten. Additionally, users with a new shipping address were not reminded to update their shipping address nor were they directed to the “Shipping Detatils” tab after filling it out once. This raised a lot of issues for the customer success staff as more expired use cases and complaints about changing shipping addresses were brought up throughout the year.</p>
+                
+                <h2>Market Research</h2>
+                
+                <p>To fulfill the need of providing a streamlined and transparent redemption experience for all users, user experience research was conducted to analyze how existing platforms currently handles product order, shipment, and status. Upon research, products sim- ilar to the Moto Insiders platform were not available, thus, a comparative analysis was conducted on a few selected e-commerce sites. Since the “Moto Rewards” and “Learn and Earn” standard redemption flows are comparable to common online shop- ping experiences, 5 e-commerce sites were studied for feature analysis. Since all sites researched allowed users to view each product detail page because none of them were based on rewards or limited experience due to lack of currency, 3 other core features were analyzed across the sites as demonstrated in Table 1.</p>
+                
+            </div>
+
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-3">
+                        </div>
+                        <div class="demo_image_col col-sm-6">
+                            <img class="demo_image" src="../assets/img/project-redemption/market-research.png">
+                        </div>
+                        <div class="demo_image_col col-sm-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_page_content">
+                <p  style="margin-top: 5%">To summarize the findings, standard e-commerce sites included the 3 following features as part of a user’s purchase experience: entering shipping address was part of each checkout process, the confirmation page reminded users that they would receive order updates through emails while directed users to the order history page and all sites included an “Order History” page where users had visibility to the status of their order. All these features did not exist on the MotorolaInsiders site due to previously determined design decisions along with the lack of the W9 requirement.</p>
+                
+                <h2>Design Principle and System</h2>
+                
+                <p>To analyze the functionality and compare the new design with the original design, a set of design principles was chosen to follow. The discussed result was to follow Don Norman’s Design Principles. Norman outlines 6 core principles of design: visibility, feedback, affordance, mapping, constraints, and consistency. Norman challenged designers to craft designs such as devices, computers, interfaces and everyday things to be intuitive, easy to use and functional; since MotorolaInsiders was lacking basic usability and intuitiveness, this set of principles was chosen to analyze design decision.</p>
+                
+                <p>For the purpose of the new enhancement, the 6 principles were broken down and each assigned a weighing system to analyze the new design as detailed in Table 2.</p>
+                
+            </div>
+
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-5">
+                        </div>
+                        <div class="demo_image_col col-sm-2">
+                            <img class="demo_image"  src="../assets/img/project-redemption/principle_weigh.png">
+                        </div>
+                        <div class="demo_image_col col-sm-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_page_content">
+                <h2>Design Implementation</h2>
+                
+                <h3>Rewards Page Consistency</h3>
+                
+                <p>The “Product Details” page is not available for all prod- ucts, providing an unsatisfying experience for users who can’t view certain products. When evaluating the current design based on Norman’s Design Principles, consis- tency was one of the principles that had to be enforced on the “Rewards” page. The “Rewards” page displays all the available products for redemption with the product image, product name, and product points value. To tackle this problem, the greyed out feature for products users cannot redeem for was removed. This solution was originally design considering a scenario where a user redeemed for a product, their available rewards points post redemption may reach below the price of that product, thus not allowing them to view the product again.</p>
+                
+            </div>
+        
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-2">
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image"  src="../assets/img/project-redemption/rewards-before.png">
+                            <p class="image_description">Existing "Rewards" page bahaviour</p>
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image"  src="../assets/img/project-redemption/rewards-after.png">
+                            <p class="image_description">Enhanced "Rewards" page bahaviour</p>
+                        </div>
+                        <div class="demo_image_col col-sm-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_page_content">
+                <p style="margin-top: 5%">Another area that required setting consistency across the platform was the ship- ping address requirement section. Previously, users were directed to the “Shipping Details” tab under their profile page to fill out their shipping details. Because this requirement wasn’t enforced on the users, they were not receiving their products sooner than they could be. The researched e-commerce sites consistently requested users to fill out their shipment details or to choose an existing address for every order. As a result, it was decided to incorporate the shipment detail request as part of a user’s redemption process. The decision was made because it allowed consistency across the page by requesting for the shipping details during every redemption. This decision resolved the issue by only directing users to the “Shipping Details” tab when the information is still absent.</p>
+            </div>
+            
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-5">
+                        </div>
+                        <div class="demo_image_col col-sm-2">
+                            <img class="demo_image"  src="../assets/img/project-redemption/shipping-info.png">
+                            <p class="image_description" >“Shipping Info” requesting users to enter their shipping detail for every redemption.</p>
+                        </div>
+                        <div class="demo_image_col col-sm-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="project_page_content">
+                <h3 style="margin-top: 5%">Product Details Page Enhancements</h3>
+                <p>Due to the removal of the greyed out feature, another method had to be integrated to set constraints and limit the interaction of redeeming for a product beyond the user’s points range. To offset the removed feature, once the user arrives on the “Product Details” page, if the product’s price was beyond the user’s available rewards points, the “Redeem” button would be greyed out and not selectable. This decision was made to limit the user’s range of interaction possibilities, preventing them from going beyond this step through a simple interface. By greying out the button, not only does it restrict users from redeeming that product, the feature itself has high affordance as it clearly illustrates the idea of not allowing to redeem it to the users.</p>
+            </div>
+            
+              <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-2">
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image"  src="../assets/img/project-redemption/productDetails-before.png">
+                            <p class="image_description">The "Redeem" button is greyed out and user can not select the button</p>
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image"  src="../assets/img/project-redemption/productDetails-after.png">
+                            <p class="image_description">The “Redeem” button is in its regular color, indicating the product is redeemable.</p>
+                        </div>
+                        <div class="demo_image_col col-sm-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="project_page_content">
+                <h2>W9 Form Requirement Feature</h2>
+                <p>Norman’s Design Principle, Feedback, was a key component to the process of incorporating the W9 Requirement form. As the W9 form is considered to be a serious task a user must complete, a popup was designed as a form of feedback to inform a user about this requirement. Popups are known as secondary windows that pops up upon a trigger from the parent window the user was currently visiting. Popups stop visitors from interacting with the parent window until they complete a certain action. In this scenario, when a user is about to reach $600 for their year to date total value, they require a form of feedback that informs them about the next steps prior to redeeming for that product. By using a popup, a summary of the reasoning behind signing the form can be explained on the popup, thus providing users with information about what has been accomplished or completed.</p>
+            </div>
+            
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-4">
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image"  src="../assets/img/project-redemption/popup.png">
+                            <p class="image_description">User receives an attention popup when they are required to sign a W9 form.</p>
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_page_content">
+                <p style="margin-top: 5%">Additionally, since users are not allowed to redeem for another prize while their W9 form is being reviewed, users should be informed and acquire that knowledge. Therefore, a second popup was designed to handle this situation.</p>
+                
+                <h2>Prototyping</h2>
+                
+                <p>Currently, the MotorolaInsiders website does not provide any visibility to a redeemed product’s status. The only existing form of communication is through email, which only gets sent when the user redeems for the product, when the product gets rejected or when the product gets shipped. The lack of having a central system to monitor all redeemed products was inconvenient and heavily concerned users.</p>
+                
+                <p>commerce sites was to incorporate a page dedicated to order histories. After removing the shipping tab under the user’s profile page as mentioned previously, there only existed one profile tab where users may edit their profile details. It was decided to add a “Prize” tab under the user’s profile page so that users could view their redemption statuses. The researched e-commerce sites all included the following order information on their order history page: order number, order name, ordered date and order status. Since there were no order numbers attached to the platform’s redemptions, that title was excluded from the prototype. Additionally, few e-commerce sites allowed users to select a specific order to view the order status through a timeline visual.</p>
+            </div>
+            
+            
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-2">
+                        </div>
+                        <div class="demo_image_col col-sm-8">
+                            <img class="demo_image"  src="../assets/img/project-redemption/tracker.png">
+                            <p class="image_description">Order tracker timeline design utilized by amazon.com</p>
+                        </div>
+                        <div class="demo_image_col col-sm-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_page_content">
+                <p style="margin-top: 5%" >Since the “Prize” tab was a one-page solution, users would have to scroll if they had acquired multiple redemptions. The vertical scrollbar was implemented onto the page to not only maintain consistency since it used across the entire platform, but it was also an application of Norma’s principle, mapping. As users scrolled down the “Prize” tab, the vertical scrollbar followed the action at the same rate, thus effectively mapped control and effect closely together.</p>
+                
+                <h2>Results</h2>
+                
+                <p>After the deployment of these new enhancements, the site was monitored for 3 months consecutively and Horizn’s monthly reports reported significant growth in user traf- ficking rate. Users felt more encouraged to complete learning activities, which led to an increase in processed redemptions. Additionally, the customer success team was receiving fewer shipment support cases, instead, received positive feedback about the new user experience from users.</p>
+                
+                <p>The goal of this enhancement was to integrate the W9 form requirement and to provide a standard and better user redemption flow to the “Moto Rewards” pro- gram. From the analysis in the report body, it was concluded that Horizn was able to successfully update the standard redemption flow and integrate the new W9 form requirement. All 6 of Norman’s design principles were applied throughout the implementation, which satisfied the client’s requests and led to the site’s success.</p>
+                
+            </div>
+            
+        </div>  
+        
+        <div class="next_project">
+            <div class="next_project_rectangle"></div>
+            <div class="next row">
+                <div class="col-sm-6 next_project_image">
+                    <img src="../assets/img/work/foodsaver_landing.png"></div>
+                <div class="col-sm-6">
+                    <div class="next_project_content">
+                        <h3>Food Saver</h3>
+                        <a href="foodsaver.html" style="color:#000000">thank you, next ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <footer>
+            <div class="footer_container container">
+                <div class="row">
+                    <div class="col-sm-6">
+                    <h2>TLDR? here’s my <a href="../assets/doc/2ADesign.pdf" style="color:#FA5F73" target="_blank"><i>resume</i></a></h2>
+                    <p><b>call me, beep me, if ya wanna reach me</b></p>
+                    <ul class="footer_links">
+                        <a href = "mailto:charmainewangyy@gmail.com?Subject=Hey%20there!" class="fas fa-envelope"></a>
+                        <a href="https://www.linkedin.com/in/charmainewang" target="_blank" class="fab fa-linkedin-in"></a>
+                        <a href="https://www.behance.net/charmainew9811" target="_blank" class="fab fa-behance"></a>
+                        <a href="https://www.instagram.com/char.mainewang/" target="_blank" class="fab fa-instagram"></a>
+                    </ul>
+                    </div>
+                    <div class="col-sm-6 footer_decor">
+                    <img class="footer_img" src="../assets/img/work/dalmatian_print.png">
+                    </div>
+                </div>
+             </div>
+        </footer>
+    
+    
+</html>
+
+
+
+	

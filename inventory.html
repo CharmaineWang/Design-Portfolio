@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Charmaine Wang</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equic="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../src/style/css/style.css">
+        
+        <!--FONTS-->
+        <link rel="stylesheet" href="https://use.typekit.net/sjq0cec.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel='stylesheet' type='text/css'>
+        
+        <!--icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+        <!--favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon_package_v0.16/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="../assets/img/favicon_package_v0.16/site.webmanifest">
+        <link rel="mask-icon" href="../assets/img/favicon_package_v0.16/safari-pinned-tab.svg" color="#fcd912">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+
+    
+        <!-- Responsive Query File-->
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        
+        <!-- Boostrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">                                                          
+        
+    </head>
+    
+    <body class="project_2_page">
+        <div class="project_page">
+            <div class="landing_page site-container">
+                <header>
+                    <nav> 
+                        <p class="nav_bar show_desktop" id="navigation"><a href="index.html" style="color:#FA5F73">Home</a></p>
+                    </nav>
+                </header>
+                <div class="main_section">    
+                    
+                    <div class="project_intro">
+                        <h1>Inventory Management Tool</h1>
+                        <h3>company.</h3>
+                        <p>Horizn</p>
+                        <h3>year.</h3>
+                        <p>2018</p>
+                        <h3>skills.</h3>
+                        <p>Product Design<br>Product Manager</p>
+                    </div>
+                    <img align="right" src="../assets/img/project-inventory/inventory.png" alt="landing image" class="landing_img">
+                </div>
+            </div>
+
+            <div class="project_page_content">
+                <h2>Background</h2>
+                
+                <p>Horizn provides e-learning platforms for companies where employees can stay engaged by learning about new products, completing tasks, earn points and redeem for prizes. As Horizn scales with these companies' engagements, we needed a better tool to handle the keeping track of all the redemptions and available prizes.<br><br>Currently, Horizn manages the inventory manually. The inventory management team from our clients will get in contact with one of Horizn's customer success employees and provide us with any inventory updates (e.g initial inventory was miscounted, there are more/less products available). Then, our customer success team will notify the developers and let them make changes to the inventory from the database. Although this solution was viable, it will not be able to support the team in the long term.</p>
+                
+                <h2>Product Goals</h2>
+                
+                <p>This Inventory Management System (IMS) was needed so that site admins can make frequent updates to the site and maximize work efficiency. The system must allow product changes to be done quickly and efficiently by a site admin (of different companies) so that the work doesn't have to be done solely by Horizn employees.</p>
+                
+                <h2>Design Process</h2>
+                
+                <h3>Empathize</h3>
+                
+                <p>In order to understand the problem space, we began by interviewing developers, Horizn's customer success team, product managers and our client's management teams.  By conversing with people who were part of the original system, it allowed me to better communicate the pain points to the Inventory Management Tool team. <br><br>The existing process serves the following problems:
+                    <br><br>- Clients do not know what the site's inventory status is until they reach out to Horizn; which means the site backlog could have a miscounted number of products
+                    <br>- Updating the inventory can take a very long time: if the inventory is lower than initially expected, users will be disappointed by the lack of prizes
+                    <br>- Developers were using their time to do manual updates because they're the only ones who have direct access to the database
+                    <br>- Product managers have to create tickets for each update<br>- Some platforms have shared inventories, admins are unclear of how many products are allocated to each company
+                    <br>- Clients have trouble validating products inventory in every store
+                </p>
+                
+               <h3>HTA</h3>
+                
+                <p>I began by creating a Hierarchical Task Analysis to understand the user flow and mapped out some high-level functionalities. This was created to help the team understand where some of the pain points may occur and provided them with a visualization of the system.</p>
+                
+                </div>
+            
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-12">
+                            <img class="demo_image" src="../assets/img/project-inventory/Flow.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_page_content" style="padding: 2.5% 20% 2.5% 20%;">
+                
+                <h3>Lo-fi</h3>
+                
+                <p>To better illustrate the idea, I put together a lo-fi prototype according to the HTA. For the major pain points such as the "Add a product" feature, I explored multiple solutions to test and analyze the most efficient user experience for distributing a product to multiple stores.</p>
+                
+            </div>
+            
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image" src="../assets/img/project-inventory/add_a_product.png"><p class="image_description">Distribute new products to different stores and specifying allocations</p>
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image" src="../assets/img/project-inventory/add_a_product2.png">
+                            <p class="image_description">separate button to add to a store</p>
+                        </div>
+                        <div class="demo_image_col col-sm-4">
+                            <img class="demo_image" src="../assets/img/project-inventory/add_a_group_-_INDEPENDENT.png">
+                            <p class="image_description">Add products when creating a store</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_page_content" style="padding: 2.5% 20% 2.5% 20%;">
+                <h3>Project Scope</h3>
+                
+                <p>Communication with the developers, customers success team and our clients occurred throughout the entire process from ideation to production. Prior to the kickoff, I presented the flow and the lo-fi prototypes to all the people currently involved in managing the inventory for feedback. We discussed the usability of the system and the developers brought up necessary technical constraints.</p>
+                
+                <h3>Hi-fi</h3>
+                
+                <p>After many rounds of design iterations based on everyone's feedback, the final design took a much simpler approach. Since we wanted to roll out this tool as soon as possible to start better managing the inventory, we decided to sacrifice the product distribution feature this time. This feature would've allowed the admins to distribute a product to different stores for redemption. The tradeoff decided by the team was to instead create a feature that allows admins to view where the product exists. This way, admins can view which stores a product is being listed without having to go to each store page to find the product.This creates more transparancy for our clients and help them understand the what products are popular.</p>
+                </div>
+            
+            <div class="project_page_image">
+                <div class=" container">
+                    <div class="demo_image_row row">
+                        <div class="demo_image_col col-sm-6">
+                            <img class="demo_image" src="../assets/img/project-inventory/products_addAProduct.png"><p class="image_description" alt="add_a_product">Adding a new product to the inventory</p>
+                        </div>
+                        <div class="demo_image_col col-sm-6">
+                            <img class="demo_image" src="../assets/img/project-inventory/products_viewSharedCompanies.png" alt="add_a_product2">
+                            <p class="image_description">Viewing where this product is located</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_page_content">
+                <h2>Conclusion</h2>
+                
+                <p>The Inventory Management Tool has been developed and is being utilized by the client's inventory management teams. Admins are able to keep track of product availabilities without reaching out to Horizn's customer success team and developers no longer have to worry about updating the database. <br><br>Moving forward, this tool can be implemented into each of our client's admin site to allow seamless inventory management and consistency.</p>
+                
+            </div>
+
+        </div>
+        
+        <div class="next_project">
+            <div class="next_project_rectangle"></div>
+            <div class="next row">
+                <div class="col-sm-6 next_project_image">
+                    <img src="../assets/img/work/redemption_landing.png"></div>
+                <div class="col-sm-6">
+                    <div class="next_project_content">
+                        <h3>Redemption Flow Enhancements</h3>
+                        <a href="redemption.html">thank you, next ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    
+    <footer>
+            <div class="footer_container container">
+                <div class="row">
+                    <div class="col-sm-6">
+                    <h2>TLDR? here’s my <a href="../assets/doc/2ADesign.pdf" style="color:#FA5F73" target="_blank"><i>resume</i></a></h2>
+                    <p><b>call me, beep me, if ya wanna reach me</b></p>
+                    <ul class="footer_links">
+                        <a href = "mailto:charmainewangyy@gmail.com?Subject=Hey%20there!" class="fas fa-envelope"></a>
+                        <a href="https://www.linkedin.com/in/charmainewang" target="_blank" class="fab fa-linkedin-in"></a>
+                        <a href="https://www.behance.net/charmainew9811" target="_blank" class="fab fa-behance"></a>
+                        <a href="https://www.instagram.com/char.mainewang/" target="_blank" class="fab fa-instagram"></a>
+                    </ul>
+                    </div>
+                    <div class="col-sm-6 footer_decor">
+                    <img class="footer_img" src="../assets/img/work/dalmatian_print.png">
+                    </div>
+                </div>
+             </div>
+        </footer>
+    
+    
+</html>
+
+
+
+	

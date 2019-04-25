@@ -562,6 +562,7 @@ footer {
 .next_project {
     position:relative;
     float:none;
+    margin-top: 10%;
     width: 100%;
     height: 40%;
 
@@ -792,7 +793,7 @@ footer {
 
      .next_project_content { 
         a {
-            color: $button;} 
+            color: $accent_color_1;} 
     }
 }
 

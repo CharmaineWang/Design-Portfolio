@@ -495,6 +495,16 @@ footer {
                     line-height: 1.5em;
                     padding: 0% 0% 0% 0%;
                     margin: 0% 0% 0% 0%;
+                    
+                    .shoutout {
+                        color:$accent_color_5;
+                        
+                        
+                    }
+                    .shoutout:hover {
+                        color: $accent_color_2;
+                        text-decoration: none;
+                    }
                 }
             }
         }

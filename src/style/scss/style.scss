@@ -668,9 +668,17 @@ footer {
     }
     
 }
-
+/**** project image content */
+ 
 .project_page_image {
     background-color: $accent_color_1;
+    .demo_image_row {
+
+        .image_description {
+            color: #ffffff;
+            
+        }
+    }
     }
     
 

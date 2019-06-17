@@ -2,7 +2,7 @@ $accent_color_1: #222E95;
 $accent_color_2: #FEDFEA;
 $accent_color_3: #FBAF02;
 $accent_color_4: #121457;
-$accent_color_5: #FE5858;
+$accent_color_5: #222E95;
 $button: #FA5F73;
 $button_hover: #ffb6bf;
 $light_bg: #ffffff;
@@ -10,7 +10,7 @@ $accent1: #FEDFEA;
 $accent2: #FBAF02;
 $main_font_color: #3a3a3a;
 $accent_font_color: #ffffff;
-$accent_font: rufina,sans-serif;
+$accent_font: EB Garamond, serif;
 $main_font: lato, sans-serif;
 
 * {
@@ -270,7 +270,7 @@ header {
             font-family: $accent_font;
             color: $accent_font_color;
         }
-
+    
         p {
         color: $accent_font_color;
         }
@@ -304,19 +304,15 @@ header {
 
 /**** PROJECT 4 ****/
 .project_4 {
-    background-color: $accent_color_5;
+   background-color: $accent_color_1;
         h1 {
             font-family: $accent_font;
             color: $accent_font_color;
         }
-
+    
         p {
-        color: $accent_font_color;
+        color: #ffffff;
         }
-        
-    a {
-        color:$accent_color_4;
-    }
 }
 
 
@@ -357,7 +353,7 @@ footer {
     p {
         margin: 10% 0% 0% 0%;
         font-family: $accent_font;
-        font-size: 16px;
+        font-size: 20px;
         color: $accent_color_4;
     
     }
@@ -476,7 +472,7 @@ footer {
                 
                 h1{
                     font-family: $accent_font;
-                    font-weight:800;
+                    font-weight:500;
                     color: white;
                 }
                 
@@ -497,7 +493,7 @@ footer {
                     margin: 0% 0% 0% 0%;
                     
                     .shoutout {
-                        color:$accent_color_5;
+                        color:$button;
                         
                         
                     }
@@ -528,19 +524,19 @@ footer {
     
     h3 {
         font-family: $accent_font;
-        font-weight: bold;
-        font-size: 20px;
+        font-weight: 300;
+        font-size: 25px;
         line-height: 1.5em;
         color: #9f9f9f;
-        margin: 2% 0% 0% 0%;
+        margin: 2% 0% 2% 0%;
     }
     
     p{
         font-family: $main_font;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 2em;
         color: $main_font_color;
-        margin: 0% 0% 0% 0%;
+        margin: 0% 0% 2.5% 0%;
     }
 
 }
@@ -605,7 +601,7 @@ footer {
         h3 {
             margin: 12% 0% 7.5% 0%;
             font-size: 35px;
-            font-weight: 800;
+            font-weight: 500;
             font-family: $accent_font;
         }
         a {
